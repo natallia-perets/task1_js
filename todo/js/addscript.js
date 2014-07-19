@@ -1,8 +1,6 @@
-i=0;
 function append(form) {
    if (form.input.value) {
       var newItem = document.createElement("LI");
-      newItem.id = i
       var newText = document.createElement("DIV")
       newText.innerHTML = form.input.value
       var newButton = document.createElement("BUTTON")
@@ -11,7 +9,21 @@ function append(form) {
       newItem.appendChild(newText);
       newItem.appendChild(newButton);
       document.getElementById("list").appendChild(newItem);
-      newButton.onclick = remove(i)
-      i=i+1;
-   }
+      document.getElementById("list").onclick = function(e) {
+    e = e || window.event   
+    var target = e.target || e.srcElement 
+
+    if (target.nodeName != 'BUTTON') return
+
+    //target.style.visibility = 'hidden'
+	var childr = target.parentNode
+	target.parentNode.parentNode.removeChild(childr)
+	
+	/*for(ind = 0; ind < childr.length; ++ind){
+		alert(childr[ind].nodeName)
+		target.parentNode.removeChild(childr[ind])
+	}*/
+    return false // prevent url change
+  }
+  }
 }
