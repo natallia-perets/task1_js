@@ -1,0 +1,38 @@
+*{
+    margin-left : auto;
+    margin-right: auto;
+
+}
+#title
+{
+	margin-top: 40px;
+	font-family: Verdana;
+    background: #E6E6FA;
+    width: 90px;
+    margin-left : auto;
+    margin-right: auto;
+    text-align: center;
+
+
+}
+#delete
+{
+    background: url(close.png) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+#item{
+	font-family: Verdana;
+	margin-left : auto;
+	margin-right: auto;
+    background: #E6E6FA;
+    width: 300px;
+    word-wrap:break-word;
+
+}
+#insert{
+    margin-left : 850px;
+    margin-right: auto;
+
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
   "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" href="style.css">
 <html>
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -8,15 +9,13 @@
   <title>todo</title>
  </head>
  <body>
- 	<div>Todo list</div>
-	<ul id="list">
-    </ul>
-<form>
-    <input type="text" name="input" size="30" /><br />
-    <input type="button" value="add" onclick="append(this.form)" />
-    <!--<input type="button" value="Заменить последний" onclick="replace(this.form)" />
-    <input type="button" value="Restore List" onclick="restore()" />-->
-</form>
+ 	<div id = "title">To do list</div>
+ 	<div id = "insert">
+    	<input  type="text"  id = "input" name="input" size="30" placeholder = "What needs to be done?">
+    	<input type="button" value="add" onclick="append()">
+	</div>
+	<ol id="list">
+    </ol>
 
  </body>
 </html>
